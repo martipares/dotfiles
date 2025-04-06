@@ -1,0 +1,69 @@
+[window]
+
+	#decorations = "Full" 
+
+	opacity = 0.85
+	#blur = true
+
+	dynamic_title = true
+
+
+
+[scrolling]
+
+	history = 25000
+
+[font]
+
+	size = 13
+	normal = { family = "SauceCodeProNerdFontMono"}
+	#normal = {family = "Proggy", style = "Regular" }
+	#normal = { family = "Source Code Pro", style = "Regular" }
+	#normal = { family = "Source Code Pro", style = "Medium 500" }
+	#normal = { family = "DejaVu", style = "Sans Mono" }
+	#normal = { family = "Teminus", style = "Regular" }
+
+
+
+
+
+[colors]
+
+#import = [
+#    "~/.config/alacritty/themes/themes/{theme}.toml"
+#]
+
+
+
+[colors.primary]
+
+	# exempla
+	# foreground = "#d8d8d8"
+	foreground = "#fefefe"
+
+	# exempla
+	# background = "#181818"
+	background = "#17202a"
+
+
+
+
+
+
+
+
+
+
+
+
+[terminal]
+
+
+
+[mouse]
+
+
+	hide_when_typing = true
+
+
+

@@ -45,8 +45,8 @@ export LINUXTOOLBOXDIR="$HOME/linuxtoolbox"
 # prompt
 #PS1='┌──[\u\e[1;35m@\e[0m\h \e[0;36m$PWD\e[0m] \e[2;37m\t\e[0m \n│\n└─\$~> '
 
-PS1='┌──[\u\e[1;35m@\e[0m\h \e[0;36m\W\e[0m] \e[2;37m\t\e[0m \n│\n└─\$~> '
-PS2='└─\$~> '
+#PS1='┌──[\u\e[1;35m@\e[0m\h \e[0;36m\W\e[0m] \e[2;37m\t\e[0m \n│\n└─\$~> '
+#PS2='└─\$~> '
 
 # alies
 alias ls='eza --color=auto --icons=auto' # --group-directories-first'
@@ -141,6 +141,10 @@ cd ()
 #######################################################
 
 
-# eval "$(starship init bash)"
+eval "$(starship init bash)"
+#starship preset gruvbox-rainbow -o ~/.config/starship.toml
+starship preset pastel-powerline -o ~/.config/starship.toml
+#starship preset tokyo-night -o ~/.config/starship.toml
+#starship preset jetpack -o ~/.config/starship.toml
 
 eval "$(zoxide init bash)"
