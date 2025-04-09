@@ -1,0 +1,66 @@
+format = """
+[┌──](fg)\
+$username\
+[@](bold purple)\
+$hostname\
+$directory\
+$git_branch\
+$git_status\
+$fill\
+$cmd_duration\
+$jobs\
+$time\
+$line_break\
+[│](fg)\
+$line_break\
+[└─](fg)\
+$character"""
+
+add_newline = false
+
+[username]
+format = '\[[$user]($style)'
+show_always = true
+style_user = 'fg'
+style_root = 'bold yellow'
+
+[hostname]
+ssh_only = false
+format = '[$hostname]($style) '
+style = 'fg'
+
+[directory]
+style = 'bold cyan'
+format = '[$path]($style)[$read_only]($read_only_style)\]'
+truncation_symbol = '…/'
+truncation_length = 3
+truncate_to_repo = false
+
+[fill]
+# symbol = '·'
+symbol = '─'
+style = 'white'
+
+[character]
+format = '$symbol '
+success_symbol = '[❯](bold fg)'
+error_symbol = '[❯](bold red)'
+
+[git_branch]
+format = ' [$symbol$branch(:$remote_branch)]($style) '
+
+
+[git_status]
+format = '([\[$all_status$ahead_behind\]]($style) )'
+
+[time]
+disabled = false
+format = '[$time]($style)'
+style = 'dimmed'
+
+[jobs]
+format = ' [$number$symbol]($style) '
+
+[cmd_duration]
+format = ' [$duration]($style) '
+
