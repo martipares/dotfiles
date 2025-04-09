@@ -168,11 +168,12 @@ eval "$(zoxide init --cmd cd zsh)"
 
 
 #starship
-#eval "$(starship init zsh)"
+export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
+eval "$(starship init zsh)"
 
 # prompt
-PS1='[%n%F{magenta}@%f%M %F{cyan}%~%f]─%*─ %# ~> '
-PS2='└─%#~> '
+# PS1='[%n%F{magenta}@%f%M %F{cyan}%~%f]─%*─ %# ~> '
+# PS2='└─%#~> '
 
 
 
