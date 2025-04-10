@@ -18,6 +18,8 @@ $character"""
 
 add_newline = false
 
+continuation_prompt = '└─❯ '
+
 [username]
 format = '\[[$user]($style)'
 show_always = true
@@ -31,10 +33,14 @@ style = 'fg'
 
 [directory]
 style = 'bold cyan'
-format = '[$path]($style)[$read_only]($read_only_style)\]'
+format = '[$path ]($style)[$read_only]($read_only_style)\]'
 truncation_symbol = '…/'
 truncation_length = 3
 truncate_to_repo = false
+home_symbol = '~'
+
+
+
 
 [fill]
 # symbol = '·'
@@ -48,6 +54,7 @@ error_symbol = '[❯](bold red)'
 
 [git_branch]
 format = ' [$symbol$branch(:$remote_branch)]($style) '
+style = 'green'
 
 
 [git_status]
@@ -64,3 +71,44 @@ format = ' [$number$symbol]($style) '
 [cmd_duration]
 format = ' [$duration]($style) '
 
+[directory.substitutions]
+"Documents" = "󰈙 "
+"Downloads" = " "
+"Music" = " "
+"Pictures" = " "
+"Videos" = ""
+"trash" = ""
+
+"Books" = ""
+"Publishers" = "󱛉"
+"library" = "󱉟"
+"projects" = ""
+"resources" = "󰂺"
+"Alpha" = "󰀫"
+"Beta" = "󰂡"
+"Gamma" = "Γ"
+"iota" = "ι"
+"Lambda" = "Λ"
+"pi" = ""
+"PI" = "Π"
+"rho" = "ρ"
+"xi" = ""
+#"art" = "󰃣"
+"Art" = "󰃣"
+
+"nvim" = ""
+"Nvim" = ""
+"linux" = ""
+"Linux" = ""
+"config" = ""
+"dotfiles" = ""
+"arch" = "󰣇"
+"Arch" = "󰣇"
+"steam" = ""
+"Steam" = ""
+"games" = "󰊗"
+"Games" = "󰊗"
+"jocs" = "󱎓"
+"Jocs" = "󱎓"
+"backup" = "󰁯"
+"ssh" = "󰣀"

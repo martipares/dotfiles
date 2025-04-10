@@ -44,7 +44,9 @@ autoload -Uz compinit && compinit
 zinit cdreplay -q
 
 # Keybindings
-bindkey -e
+bindkey '^f' autosuggest-accept
+# bindkey -e # emacs mode
+# bindkey -v # vim mode
 bindkey '^p' history-search-backward
 bindkey '^n' history-search-forward
 bindkey '^[w' kill-region
@@ -80,6 +82,7 @@ alias ll='ls --all --long'
 alias gvim='gamemoderun nvim'
 alias home='cd ~'
 alias cd..='cd ..'
+alias lib='cd run/media/martipares/library'
 
 [ -f "/home/martipares/.ghcup/env" ] && . "/home/martipares/.ghcup/env" # ghcup-env
 
