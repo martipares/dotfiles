@@ -1,7 +1,8 @@
 {
   "extras": [
     "lazyvim.plugins.extras.coding.luasnip",
-    "lazyvim.plugins.extras.lang.tex"
+    "lazyvim.plugins.extras.lang.tex",
+    "lazyvim.plugins.extras.util.dot"
   ],
   "install_version": 7,
   "news": {

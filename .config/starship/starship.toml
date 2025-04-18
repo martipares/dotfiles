@@ -62,14 +62,14 @@ format = '([\[$all_status$ahead_behind\]]($style) )'
 
 [time]
 disabled = false
-format = '[$time]($style)'
+format = ' [$time]($style)'
 style = 'dimmed'
 
 [jobs]
-format = ' [$number$symbol]($style) '
+format = ' [$number$symbol]($style)'
 
 [cmd_duration]
-format = ' [$duration]($style) '
+format = ' [$duration]($style)'
 
 [directory.substitutions]
 "Documents" = "󰈙 "
