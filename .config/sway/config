@@ -4,11 +4,11 @@
 #
 # Read `man 5 sway` for a complete reference.
 
-font pango: Source Code Pro Regular 6
+font pango: SauceCodeProNerdFontMono Regular 7
 #font pango: latinmodern math 14
 #font pango: monospace 6
 titlebar_border_thickness 0
-titlebar_padding 1
+titlebar_padding 0
 ### Variables
 #
 # Logo key. Use Mod1 for Alt.
@@ -41,6 +41,7 @@ exec_always autotiling -w 5 6 7 8 9 10 --limit 1
 exec protonmail-bridge --no-window
 
 #exec protonvpn-cli c -f
+
 #exec protonvpn-app
 
 exec kate ~/to_do.txt
@@ -64,6 +65,9 @@ output DP-1 bg ~/.wallpaper_sway/wp_2.png fill
 
 output HDMI-A-2 bg ~/.wallpaper_sway/wp_3.jpg fill
 #output HDMI-A-2 bg ~/.wallpaper_sway/wp_3.png fill
+
+# Hardy
+# output * bg ~/.wallpaper_sway/wp_01.png fill
 
 
 #
@@ -98,6 +102,14 @@ output HDMI-A-2 resolution 1920x1080 position 0,2760
 workspace 10 output HDMI-A-2
 workspace 9 output HDMI-A-2
 
+# Hardy
+#output eDP-1 resolution 1920x1080@60.020Hz position 0,0
+#output eDP-1 resolution 1920x1080@60.020Hz position 1920,0
+#output eDP-1 resolution 1920x1080@60.020Hz position 1280,0
+#output DP-1 resolution 1920x1080@60.000Hz position 0,0 adaptive_sync off
+#output DP-1 resolution 1280x1024@60.020Hz  position 0,0 adaptive_sync off
+#output HDMI-A-2 resolution 1980x1080 position 0,0
+
 bindsym $mod+Shift+u exec swaymsg output eDP-1 enable
 bindsym $mod+Shift+i exec swaymsg output eDP-1 disable
 
@@ -110,6 +122,11 @@ bindsym $mod+Shift+y exec swaymsg output HDMI-A-2 disable
 bindsym $mod+p exec thunar
 
 bindsym $mod+Shift+t exec  gwenview ~/Proton_Calendar_Legend.png
+
+# Hardy
+# screen solution
+# bindsym $mod+y exec thunar ~/.screen_solution
+# bindsym $mod+Shift+y exec brightnessctl s 872
 
 ### Idle configuration
 #
@@ -137,14 +154,10 @@ bindsym $mod+Shift+t exec  gwenview ~/Proton_Calendar_Legend.png
    }
     
 
-    input "1:1:AT_Translated_Set_2_keyboard" {
-	#xkb_layout "es"
-	xkb_layout "us"
-	xkb_variant "altgr-intl"
-	}
-
     input * {
-    xkb_options caps:escape_shifted_capslock
+        xkb_layout "us"
+        xkb_variant "altgr-intl"
+        xkb_options "caps:escape_shifted_capslock"
     }
 
 #
@@ -172,6 +185,12 @@ bindsym $mod+Shift+t exec  gwenview ~/Proton_Calendar_Legend.png
 	set $volumeup pamixer -i 2
 	set $volumedown pamixer -d 2
 	set $volumemute pamixer -t
+
+	# Hardy
+	# Volum
+	# set $volumeup pamixer -i 5
+	# set $volumedown pamixer -d 5
+	# set $volumemute pamixer -t
 
 	bindsym $mod+u exec $volumeup
 	bindsym $mod+i exec $volumedown
