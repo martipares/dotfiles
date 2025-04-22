@@ -10,6 +10,7 @@ $fill\
 $cmd_duration\
 $jobs\
 $time\
+$battery\
 $line_break\
 [│](fg)\
 $line_break\
@@ -71,6 +72,14 @@ format = ' [$number$symbol]($style)'
 [cmd_duration]
 format = ' [$duration]($style)'
 
+[battery]
+format = ' [$symbol$percentage]($style) '
+disabled = true
+
+[[battery.display]]
+threshold = 100
+style = 'green'
+
 [directory.substitutions]
 "Documents" = "󰈙 "
 "Downloads" = " "
@@ -84,24 +93,28 @@ format = ' [$duration]($style)'
 "library" = "󱉟"
 "projects" = ""
 "resources" = "󰂺"
-"Alpha" = "󰀫"
-"Beta" = "󰂡"
-"Gamma" = "Γ"
-"iota" = "ι"
-"Lambda" = "Λ"
-"pi" = ""
-"PI" = "Π"
-"rho" = "ρ"
-"xi" = ""
-#"art" = "󰃣"
-"Art" = "󰃣"
 
+#Latex    
+"LaTeX" = ""
+"TeX" = ""
+"Tex" = ""
+"tex" = ""
+# Nvim   
+"neovim" = ""
+"Neovim" = ""
+"NeoVim" = ""
 "nvim" = ""
 "Nvim" = ""
+# Vim  
+"vim" = ""
+"Vim" = ""
+
 "linux" = ""
 "Linux" = ""
 "config" = ""
 "dotfiles" = ""
+#"art" = "󰃣"
+"Art" = "󰃣"
 "arch" = "󰣇"
 "Arch" = "󰣇"
 "steam" = ""
@@ -111,4 +124,62 @@ format = ' [$duration]($style)'
 "jocs" = "󱎓"
 "Jocs" = "󱎓"
 "backup" = "󰁯"
-"ssh" = "󰣀"
+#"ssh" = "󰣀"
+
+"switch" = "󰟡"
+"Switch" = "󰟡"
+"wii" = "󰖫"
+"Wii" = "󰖫"
+#"nintendo" = ""
+#"Nintendo" = ""
+"Wii_U" = "󰜭"
+"PS" = "󰐔"
+
+"alpha" = "α"
+"Alpha" = "α"
+"beta" = "β"
+"Beta" = "β"
+"gamma" = "γ"
+"Gamma" = "Γ"
+"delta" = "δ"
+"Delta" = "Δ"
+"epsilon" = "ε"
+"Epsilon" = "ε"
+"eta" = "η"
+"Eta" = "η"
+"zeta" = "ζ"
+"Zeta" = "ζ"
+"theta" = "θ"
+"Theta" = "Θ"
+"iota" = "ι"
+"Iota" = "ι"
+"kappa" = "κ"
+"Kappa" = "Κ"
+"lambda" = "λ"
+"Lambda" = "Λ"
+"mu" = "μ"
+"Mu" = "μ"
+"nu" = "ν"
+"Nu" = "ν"
+"xi" = "ξ"
+"Xi" = "Ξ"
+"omicron" = "ο"
+"Omicron" = "Ο"
+"pi" = "π"
+"Pi" = "Π"
+"rho" = "ρ"
+"Rho" = "ρ"
+"sigma" = "σ"
+"Sigma" = "Σ"
+"tau" = "τ"
+"Tau" = "τ"
+"upsilon" = "υ"
+"Upsilon" = "υ"
+"phi" = "φ"
+"Phi" = "φ"
+"chi" = "χ"
+"Chi" = "χ"
+"psi" = "ψ"
+"Psi" = "Ψ"
+"omega" = "ω"
+"Omega" = "Ω"

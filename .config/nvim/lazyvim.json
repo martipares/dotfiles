@@ -1,10 +1,8 @@
 {
   "extras": [
-    "lazyvim.plugins.extras.coding.luasnip",
-    "lazyvim.plugins.extras.lang.tex",
-    "lazyvim.plugins.extras.util.dot"
+
   ],
-  "install_version": 7,
+  "install_version": 8,
   "news": {
     "NEWS.md": "10960"
   },

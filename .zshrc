@@ -79,10 +79,16 @@ alias c='clear'
 alias grep='grep --color=auto'
 alias ll='ls --all --long'
 #alias ll='ls -la'
-alias gvim='gamemoderun nvim'
 alias home='cd ~'
 alias cd..='cd ..'
 alias lib='cd run/media/martipares/library'
+
+# Neovim
+alias nvimr='./projects/xi/nvim-r/bin/nvim'
+alias nvimd='./projects/xi/nvim-d/bin/nvim'
+alias gvim='gamemoderun nvim'
+alias gvimr='gamemoderun ./projects/xi/nvim-r/bin/nvim'
+alias gvimd='gamemoderun ./projects/xi/nvim-d/bin/nvim'
 
 [ -f "/home/martipares/.ghcup/env" ] && . "/home/martipares/.ghcup/env" # ghcup-env
 
@@ -175,8 +181,10 @@ export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
 eval "$(starship init zsh)"
 
 # prompt
-# PS1='[%n%F{magenta}@%f%M %F{cyan}%~%f]─%*─ %# ~> '
-# PS2='└─%#~> '
+# PS1='┌──[%n%F{magenta}@%f%M %F{cyan}%~%f] %*
+# │
+# └─ %# ~> '
+# PS2='└─ %# ~> '
 
 
 
