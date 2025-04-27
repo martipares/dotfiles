@@ -30,10 +30,10 @@ zinit light Aloxaf/fzf-tab
 zinit light MichaelAquilina/zsh-you-should-use
 
 # Add in snippets
-#zinit snippet OMZL::git.zsh
-#zinit snippet OMZP::git
-#zinit snippet OMZP::sudo
-#zinit snippet OMZP::archlinux
+zinit snippet OMZL::git.zsh
+zinit snippet OMZP::git
+zinit snippet OMZP::sudo
+zinit snippet OMZP::archlinux
 #zinit snippet OMZP::aws
 #zinit snippet OMZP::kubectl
 #zinit snippet OMZP::kubectx
@@ -83,13 +83,14 @@ alias ll='ls --all --long'
 alias home='cd ~'
 alias cd..='cd ..'
 alias lib='cd run/media/martipares/library'
+alias briss2='/home/martipares/projects/Lambda/briss_2_0/build/scriptsShadow/briss_2_0'
 
 # Neovim
-alias nvimr='./projects/xi/nvim-r/bin/nvim'
-alias nvimd='./projects/xi/nvim-d/bin/nvim'
+alias nvimr='/home/martipares/projects/xi/nvim-r/bin/nvim'
+alias nvimd='/home/martipares/projects/xi/nvim-d/bin/nvim'
 alias gvim='gamemoderun nvim'
-alias gvimr='gamemoderun ./projects/xi/nvim-r/bin/nvim'
-alias gvimd='gamemoderun ./projects/xi/nvim-d/bin/nvim'
+alias gvimr='gamemoderun /home/martipares/projects/xi/nvim-r/bin/nvim'
+alias gvimd='gamemoderun /home/martipares/projects/xi/nvim-d/bin/nvim'
 
 [ -f "/home/martipares/.ghcup/env" ] && . "/home/martipares/.ghcup/env" # ghcup-env
 
