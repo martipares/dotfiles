@@ -27,6 +27,7 @@ zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions
 zinit light Aloxaf/fzf-tab
+zinit light MichaelAquilina/zsh-you-should-use
 
 # Add in snippets
 #zinit snippet OMZL::git.zsh
@@ -176,9 +177,13 @@ eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
 
 
-#starship
+# starship
 export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
 eval "$(starship init zsh)"
+
+# oh-my-posh
+#eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/zen.toml)"
+
 
 # prompt
 # PS1='┌──[%n%F{magenta}@%f%M %F{cyan}%~%f] %*

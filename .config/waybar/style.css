@@ -72,7 +72,7 @@ window#waybar.chromium {
 
 #mode {
     background-color: #64727D;
-    border-bottom: 3px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
 }
 
 #clock,

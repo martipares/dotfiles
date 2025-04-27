@@ -4,7 +4,11 @@
 #
 # Read `man 5 sway` for a complete reference.
 
-font pango: SauceCodeProNerdFontMono Regular 7
+
+# disable titlebar set font size to 0.001, or 1 for border thickness
+font pango: SauceCodeProNerdFontMono Regular 1
+
+#font pango: SauceCodeProNerdFontMono Regular 7
 #font pango: latinmodern math 14
 #font pango: monospace 6
 titlebar_border_thickness 0
@@ -26,8 +30,6 @@ set $term alacritty
 # on the original workspace that the command was run on.
 set $menu wofi --show run
 
-
-
 exec_always dunst
 
 exec_always /usr/lib/polkit-kde-authentication-agent-1
@@ -43,6 +45,8 @@ exec protonmail-bridge --no-window
 #exec protonvpn-cli c -f
 
 #exec protonvpn-app
+
+exec thunar
 
 exec kate ~/to_do.txt
 
