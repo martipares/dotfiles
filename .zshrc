@@ -91,6 +91,7 @@ alias nvimd='/home/martipares/projects/xi/nvim-d/bin/nvim'
 alias gvim='gamemoderun nvim'
 alias gvimr='gamemoderun /home/martipares/projects/xi/nvim-r/bin/nvim'
 alias gvimd='gamemoderun /home/martipares/projects/xi/nvim-d/bin/nvim'
+alias nvimu='/home/martipares/projects/linux/scripts/neovim_update.sh'
 
 [ -f "/home/martipares/.ghcup/env" ] && . "/home/martipares/.ghcup/env" # ghcup-env
 

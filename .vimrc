@@ -32,8 +32,7 @@ map <Space> <Leader>
 call plug#begin('~/.vim/plugged')
 
   Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
-    " let g:UltiSnipsSnippetsDir="~/.vim/plugged/ultisnips/"
-    let g:UltiSnipsSnippetsDir="~/.config/vim/"
+    let g:UltiSnipsSnippetsDir="~/.vim/plugged/ultisnips/"
     let g:UltiSnipsExpandTrigger = '<tab>'
     let g:UltiSnipsJumpForwardTrigger = '<tab>'
     let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
@@ -82,5 +81,5 @@ nnoremap <F3> :NERDTreeToggle<cr>
 set statusline=
 set statusline+=\ %F\ %M\ %Y\ %R
 set statusline+=%=
-"set statusline+=\ ascii:\ %b\ hex:\ 0x%B\ row:\ %l\ col:\ %c\ percent:\ %p%%
+set statusline+=\ ascii:\ %b\ hex:\ 0x%B\ row:\ %l\ col:\ %c\ percent:\ %p%%
 set laststatus=2

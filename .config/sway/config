@@ -46,10 +46,9 @@ exec protonmail-bridge --no-window
 
 #exec protonvpn-app
 
-exec thunar
-
 exec kate ~/to_do.txt
 
+exec thunar
 
 ### Output configuration
 #
