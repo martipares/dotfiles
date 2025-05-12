@@ -7,10 +7,10 @@ return {
     opts = {
       style = "moon",
       on_colors = function(colors)
-      colors.fg = "#ffffff"
-      colors.fg_dark = "#bbbbbb"
-      colors.fg_gutter = "#999999"
+        colors.fg = "#ffffff"
+        colors.fg_dark = "#bbbbbb"
+        -- colors.fg_gutter = "#999999"
       end,
     },
-  }
+  },
 }

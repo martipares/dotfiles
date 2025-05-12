@@ -107,10 +107,11 @@ style = 'green'
 "nvim" = ""
 "Nvim" = ""
 
-"LazyVim" = " 󰒲  "
 
-"Lazy" = "󰒲"
-"lazy" = "󰒲"
+#LazyVim 󰒲
+"LazyVim" = " 󰒲 "
+"Lazy" = "󰒲 "
+"lazy" = "󰒲 "
 
 # Vim  
 "vim" = ""
