@@ -60,6 +60,7 @@ style = 'green'
 
 [git_status]
 format = '([\[$all_status$ahead_behind\]]($style) )'
+deleted = '✘ '
 
 [time]
 disabled = false
@@ -103,8 +104,14 @@ style = 'green'
 "neovim" = ""
 "Neovim" = ""
 "NeoVim" = ""
-"nvim" = ""
-"Nvim" = ""
+"nvim" = ""
+"Nvim" = ""
+
+"LazyVim" = " 󰒲  "
+
+"Lazy" = "󰒲"
+"lazy" = "󰒲"
+
 # Vim  
 "vim" = ""
 "Vim" = ""
