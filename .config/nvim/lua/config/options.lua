@@ -13,3 +13,5 @@ vim.opt.spelllang = "en_gb"
 -- vim.opt.spelllang = "ca_es"
 
 vim.opt.spell = true
+
+vim.g.lazyvim_picker = "snacks"

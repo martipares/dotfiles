@@ -5,6 +5,7 @@ return {
     lazy = true,
     -- theme tokyonight.nvim moon, storm, night, day
     opts = {
+      transparent = false,
       style = "moon",
       -- on_colors = function(colors)
       --   colors.fg = "#ffffff"
