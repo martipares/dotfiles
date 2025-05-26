@@ -20,18 +20,25 @@ require("lazy").setup({
     -- add LazyVim and import its plugins
     -- { "LazyVim/LazyVim", import = "lazyvim.plugins" },
     { "martipares/LazyVim", import = "lazyvim.plugins" },
-    -- import any extras modules here
+    -- extra included by default
+    -- { import = "lazyvim.plugins.extras.coding.blink" },
+    -- { import = "lazyvim.plugins.extras.coding.snacks_explorer" },
+    -- enabled languages
     -- { import = "lazyvim.plugins.extras.lang.tex" },
+    -- import any extras modules here
     -- { import = "lazyvim.plugins.extras.coding.luasnip" },
-    -- { import = "lazyvim.plugins.extras.util.dot" },
     -- { import = "lazyvim.plugins.extras.coding.yanky" },
     -- { import = "lazyvim.plugins.extras.editor.dial" },
     -- { import = "lazyvim.plugins.extras.editor.fzf" },
     -- { import = "lazyvim.plugins.extras.editor.inc-rename" },
+    -- { import = "lazyvim.plugins.extras.editor.snacks_picker" },
+    -- { import = "lazyvim.plugins.test.core" },
+    -- { import = "lazyvim.plugins.extras.util.dot" },
     -- { import = "lazyvim.plugins.extras.util.mini-hipatterns" },
     -- { import = "lazyvim.plugins.extras.util.project" },
-    -- { import = "lazyvim.plugins.test.core" },
+    -- import animation extras
     -- { import = "lazyvim.plugins.extras.ui.mini-animate" },
+    -- { import = "lazyvim.plugins.extras.ui.smear-cursor" },
     -- import/override with your plugins
     { import = "plugins" },
   },

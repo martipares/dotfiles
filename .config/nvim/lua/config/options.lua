@@ -4,7 +4,7 @@
 
 vim.opt.wrap = true
 
-vim.opt.virtualedit = "onemore"
+-- vim.opt.virtualedit = "onemore"
 
 vim.opt.relativenumber = false
 

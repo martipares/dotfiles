@@ -1,3 +1,10 @@
+[general]
+
+import = [
+   "~/.config/alacritty/themes/tokyonight_moon.toml"
+]
+
+
 [window]
 
 	#decorations = "Full" 
@@ -15,71 +22,21 @@
 
 [font]
 
-	size = 13
-	normal = { family = "SauceCodeProNerdFontMono"}
-	#normal = {family = "Proggy", style = "Regular" }
-	#normal = { family = "Source Code Pro", style = "Regular" }
-	#normal = { family = "Source Code Pro", style = "Medium 500" }
-	#normal = { family = "DejaVu", style = "Sans Mono" }
-	#normal = { family = "Teminus", style = "Regular" }
-
+	size = 12
+	normal = { family = "SauceCodeProNerdFontMono", style = "Regular" }
+	bold = { family = "SauceCodeProNerdFontMono", style = "Bold" }
+	italic = { family = "SauceCodeProNerdFontMono", style = "Italic" }
+	bold_italic = { family = "SauceCodeProNerdFontMono", style = "Bold Italic" }
 
 
 
 
 # [colors]
-#
-# #import = [
-# #    "~/.config/alacritty/themes/themes/{theme}.toml"
-# #]
 
 
 
-# -----------------------------------------------------------------------------
-# TokyoNight Alacritty Colors
-# Theme: Tokyo Night Moon
-# Upstream: https://github.com/folke/tokyonight.nvim/raw/main/extras/alacritty/tokyonight_moon.toml
-# -----------------------------------------------------------------------------
 
-# Default colors
-[colors.primary]
-background = '#222436'
-foreground = '#ffffff'
 
-#[colors.cursor]
-#cursor = '#ffffff'
-#text = '#222436'
-
-# Normal colors
-[colors.normal]
-black = '#1b1d2b'
-red = '#ff3c3c'
-green = '#cdad00'
-yellow = '#ffff00'
-blue = '#82aaff'
-magenta = '#ff007c'
-cyan = '#00ffff'
-white = '#828bb8'
-
-# Bright colors
-[colors.bright]
-black = '#444a73'
-red = '#ff5f5f'
-green = '#ddba00'
-yellow = '#ffffff'
-blue = '#9ab8ff'
-magenta = '#ff498a'
-cyan = '#c3ffff'
-white = '#ffffff'
-
-# Indexed Colors
-[[colors.indexed_colors]]
-index = 16
-color = '#ffa500'
-
-[[colors.indexed_colors]]
-index = 17
-color = '#7f0000'
 
 
 

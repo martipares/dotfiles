@@ -13,3 +13,25 @@ Refer to the [documentation](https://lazyvim.github.io/installation) to get star
 # Dependencies 
 <!--TODO add dependencies -->
 
+
+# Enabled Extras
+=> extra included by default
+coding.blink
+coding.snacks_explorer
+=> enabled languages
+lang.tex
+=> import any extras modules here
+coding.luasnip
+coding.yanky
+editor.dial
+editor.fzf
+editor.inc-rename
+editor.snacks_picker
+test.core
+util.dot
+util.mini-hipatterns
+util.project
+=> import animation extras
+ui.mini-animate
+ui.smear-cursor
+
