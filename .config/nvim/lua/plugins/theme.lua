@@ -5,7 +5,7 @@ return {
     lazy = true,
     -- theme tokyonight.nvim moon, storm, night, day
     opts = {
-      style = "moon",
+      style = "storm",
       -- transparent = false,
       -- styles = {
       --   sidebars = "transparent",
