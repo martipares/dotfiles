@@ -9,77 +9,128 @@
 "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-set nocompatible
 set encoding=utf8
+
+" BASIC ---------------------------------------------------------------- {{{
+
+" Disable compatibility with vi which can cause unexpected issues.
+set nocompatible
+
+" Enable type file detection. Vim will be able to try to detect the type of file in use.
 filetype on
+
+" Enable plugins and load plugin for the detected file type.
 filetype plugin on
+
+" Load an indent file for the detected file type.
 filetype indent on
+
+" Turn syntax highlighting on.
 syntax on
+
+" Add numbers to each line on the left-hand side.
 set number
+
+" Highlight cursor line underneath the cursor horizontally.
+set cursorline
+
+" Highlight cursor line underneath the cursor vertically.
+" set cursorcolumn
+
+" Set shift width to 4 spaces.
+" set shiftwidth=4
+
+" Set tab width to 4 columns.
+" set tabstop=4
+
+" Use space characters instead of tabs.
+" set expandtab
+
+" Do not save backup files.
+" set nobackup
+
+" Do not let cursor scroll below or above N number of lines when scrolling.
+" set scrolloff=10
+
+" Do not wrap lines. Allow long lines to extend as far as the line goes.
+set nowrap
+
+" While searching though a file incrementally highlight matching characters as you type.
 set incsearch
+
+" Ignore capital letters during search.
 set ignorecase
+
+" Override the ignorecase option if searching for capital letters.
+" This will allow you to search specifically for capital letters.
 set smartcase
+
+" Show partial command you type in the last line of the screen.
 set showcmd
+
+" Show the mode you are on the last line.
 set showmode
+
+" Show matching words during a search.
 set showmatch
+
+" Use highlighting when doing a search.
 set hlsearch
-set history=100
+
+" Set the commands to save in history default number is 20.
+set history=1000
+" Enable auto completion menu after pressing TAB.
 set wildmenu
+
+" Make wildmenu behave like similar to Bash completion.
 set wildmode=list:longest
-nnoremap <SPACE> <Nop>
-map <Space> <Leader>
+
+" There are certain files that we would never want to edit with Vim.
+" Wildmenu will ignore files with these extensions.
+set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
+
+" }}}
+
+" PLUGINS ---------------------------------------------------------------- {{{
 
 call plug#begin('~/.vim/plugged')
 
-  Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
-    let g:UltiSnipsSnippetsDir="~/.vim/plugged/ultisnips/"
-    let g:UltiSnipsExpandTrigger = '<tab>'
-    let g:UltiSnipsJumpForwardTrigger = '<tab>'
-    let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
-
-  Plug 'lervag/vimtex'
-    let g:tex_flavor='latex'
-    let g:vimtex_view_method='zathura'
-    let g:vimtex_quickfix_mode=0
-      inoremap <C-f> <Esc>: silent exec '.!inkscape-figures create "'.getline('.').'" "'.b:vimtex.root.'/figures/"'<CR><CR>:w<CR>
-      nnoremap <C-f> : silent exec '!inkscape-figures edit "'.b:vimtex.root.'/figures/" > /dev/null 2>&1 &'<CR><CR>:redraw!<CR>
-
-
-  Plug 'KeitaNakamura/tex-conceal.vim'
-    set conceallevel=1
-    let g:tex_conceal='abdmg'
-    hi Conceal ctermbg=none
-
-  Plug 'tpope/vim-dispatch'
 
   Plug 'dense-analysis/ale'
 
   Plug 'preservim/nerdtree'
 
-  Plug 'dylanaraps/wal'
-
-  Plug 'catppuccin/vim', { 'as': 'catppuccin' }
-    let g:lightline = {'colorscheme': 'catppuccin_mocha'}
 
 call plug#end()
 
-  setlocal spell
-  set spelllang=en_gb
-  inoremap <C-l> <c-g>u<Esc>[s1z=`]a<c-g>u
-
-    "colorscheme wal
-    "set background=dark
-    "execut wal --theme base16-nord
+" }}}
 
 
+" MAPPINGS --------------------------------------------------------------- {{{
 
-" NERDTree specific mappings.
-" Map the F3 key to toggle NERDTree open and close.
-nnoremap <F3> :NERDTreeToggle<cr>
+nnoremap <SPACE> <Nop>
+map <Space> <Leader>
+
+" }}}
 
 
-set statusline=
-set statusline+=\ %F\ %M\ %Y\ %R
-set statusline+=%=
-set statusline+=\ ascii:\ %b\ hex:\ 0x%B\ row:\ %l\ col:\ %c\ percent:\ %p%%
-set laststatus=2
+" VIMSCRIPT -------------------------------------------------------------- {{{
+
+" This will enable code folding.
+" Use the marker method of folding.
+augroup filetype_vim
+    autocmd!
+    autocmd FileType vim setlocal foldmethod=marker
+augroup END
+
+" More Vimscripts code goes here.
+
+" }}}
+
+" STATUS LINE ------------------------------------------------------------ {{{
+
+" Status bar code goes here.
+
+" }}}
+
+
