@@ -18,6 +18,7 @@ Refer to the [documentation](https://lazyvim.github.io/installation) to get star
 => extra included by default
 coding.blink
 coding.snacks_explorer
+editor.snacks_picker
 => enabled languages
 lang.tex
 => import any extras modules here
@@ -26,7 +27,6 @@ coding.yanky
 editor.dial
 editor.fzf
 editor.inc-rename
-editor.snacks_picker
 test.core
 util.dot
 util.mini-hipatterns
