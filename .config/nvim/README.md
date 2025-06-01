@@ -25,7 +25,6 @@ lang.tex
 coding.luasnip
 coding.yanky
 editor.dial
-editor.fzf
 editor.inc-rename
 test.core
 util.dot
@@ -35,13 +34,13 @@ util.project
 ui.mini-animate
 ui.smear-cursor
 
+
 In lazyvim.json
 
 "extras": [
     "lazyvim.plugins.extras.coding.luasnip",
     "lazyvim.plugins.extras.coding.yanky",
     "lazyvim.plugins.extras.editor.dial",
-    "lazyvim.plugins.extras.editor.fzf",
     "lazyvim.plugins.extras.editor.inc-rename",
     "lazyvim.plugins.extras.lang.tex",
     "lazyvim.plugins.extras.test.core",

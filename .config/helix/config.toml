@@ -1,2 +1,6 @@
 theme = "tokyonight_moon"
 
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
