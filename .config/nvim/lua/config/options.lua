@@ -13,11 +13,11 @@ vim.opt.spell = true
 vim.g.lazyvim_picker = "snacks"
 
 -- Englesh GB en_gb, en_GB
-vim.opt.spelllang = "en_gb"
+-- vim.opt.spelllang = "en_gb"
 -- Castella es_es, es_ES
 -- vim.opt.spelllang = "es_es"
 -- Catala ca_ES, ca_es
--- vim.opt.spelllang = "ca_es"
+vim.opt.spelllang = "ca_es"
 -- Danish (Denmark)
 -- vim.opt.spelllang = "da_dk"
 -- German
