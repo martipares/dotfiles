@@ -84,7 +84,7 @@ alias ll='ls --all --long'
 alias home='cd ~'
 alias cd..='cd ..'
 alias lib='cd run/media/martipares/library'
-alias briss2='/home/martipares/projects/Lambda/briss_2_0/build/scriptsShadow/briss_2_0'
+alias briss2='/home/martipares/projects/xi/briss_2_0/build/scriptsShadow/briss_2_0'
 
 # Neovim
 alias nvimr='/home/martipares/projects/xi/nvim-r/bin/nvim'
