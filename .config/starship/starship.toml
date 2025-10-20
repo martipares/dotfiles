@@ -95,11 +95,11 @@ style = 'green'
 "projects" = ""
 "resources" = "󰂺"
 
-#Latex    
-"LaTeX" = ""
-"TeX" = ""
-"Tex" = ""
-"tex" = ""
+##Latex    
+#"LaTeX" = ""
+#"TeX" = ""
+#"Tex" = ""
+#"tex" = ""
 # Nvim   
 "neovim" = ""
 "Neovim" = ""
@@ -110,8 +110,8 @@ style = 'green'
 
 #LazyVim 󰒲
 "LazyVim" = " 󰒲 "
-"Lazy" = "󰒲 "
-"lazy" = "󰒲 "
+# "Lazy" = "󰒲 "
+# "lazy" = "󰒲 "
 
 # Vim  
 "vim" = ""
@@ -121,8 +121,8 @@ style = 'green'
 "Linux" = ""
 "config" = ""
 "dotfiles" = ""
-#"art" = "󰃣"
-"Art" = "󰃣"
+# "art" = "󰃣"
+# "Art" = "󰃣"
 "arch" = "󰣇"
 "Arch" = "󰣇"
 "steam" = ""
@@ -136,11 +136,11 @@ style = 'green'
 
 "switch" = "󰟡"
 "Switch" = "󰟡"
-"wii" = "󰖫"
-"Wii" = "󰖫"
+# "wii" = "󰖫"
+# "Wii" = "󰖫"
 #"nintendo" = ""
 #"Nintendo" = ""
-"Wii_U" = "󰜭"
+# "Wii_U" = "󰜭"
 "PS" = "󰐔"
 
 "alpha" = "α"

@@ -40,15 +40,15 @@ exec_always nm-applet
 
 exec_always autotiling -w 5 6 7 8 9 10 --limit 1
 
-exec protonmail-bridge --no-window
+# exec protonmail-bridge --no-window
 
 #exec protonvpn-cli c -f
 
-#exec protonvpn-app
+# exec protonvpn-app --no-window
 
-exec kate ~/to_do.txt
+# exec kate ~/to_do.txt
 
-exec thunar
+# exec thunar
 
 ### Output configuration
 #
