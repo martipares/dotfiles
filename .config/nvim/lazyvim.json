@@ -4,6 +4,7 @@
     "lazyvim.plugins.extras.coding.yanky",
     "lazyvim.plugins.extras.editor.dial",
     "lazyvim.plugins.extras.editor.inc-rename",
+    "lazyvim.plugins.extras.lang.python",
     "lazyvim.plugins.extras.lang.tex",
     "lazyvim.plugins.extras.test.core",
     "lazyvim.plugins.extras.util.dot",
