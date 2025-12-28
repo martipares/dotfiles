@@ -317,6 +317,6 @@ theme "tokyonight_moon"
 
 // The folder in which Zellij will look for themes
 //
-theme_dir "/home/martipares/.config/zellij/themes/"
+theme_dir "/home/deck/.config/zellij/themes/"
 
 
