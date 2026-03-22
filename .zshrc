@@ -1,9 +1,9 @@
 
 
 
-# TeXLive 2025
-PATH=$PATH:/usr/local/texlive/2025/bin/x86_64-linux
-export PATH=$PATH:/usr/local/texlive/2025/bin/x86_64-linux
+# TeXLive 2026
+PATH=$PATH:/usr/local/texlive/2026/bin/x86_64-linux
+export PATH=$PATH:/usr/local/texlive/2026/bin/x86_64-linux
 
 
 # If not running interactively, don't do anything

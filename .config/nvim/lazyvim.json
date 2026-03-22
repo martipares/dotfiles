@@ -6,6 +6,7 @@
     "lazyvim.plugins.extras.editor.inc-rename",
     "lazyvim.plugins.extras.lang.python",
     "lazyvim.plugins.extras.lang.tex",
+    "lazyvim.plugins.extras.lang.typst",
     "lazyvim.plugins.extras.test.core",
     "lazyvim.plugins.extras.util.dot",
     "lazyvim.plugins.extras.util.mini-hipatterns",
