@@ -3,8 +3,8 @@
 #
 
 # TeXLive 2026
-PATH=$PATH:/usr/local/texlive/2026/bin/x86_64-linux
-export PATH=$PATH:/usr/local/texlive/2026/bin/x86_64-linux
+PATH=$PATH:/home/deck/TeXLive/2026/bin/x86_64-linux
+export PATH=$PATH:/home/deck/TeXLive/2026/bin/x86_64-linux
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
@@ -54,7 +54,7 @@ alias gvim='gamemoderun nvim'
 alias gvimr='gamemoderun ./Projects/xi/nvim-r/bin/nvim'
 alias gvimd='gamemoderun ./Projects/xi/nvim-d/bin/nvim'
 
-[ -f "/home/martipares/.ghcup/env" ] && . "/home/martipares/.ghcup/env" # ghcup-env
+[ -f "/home/deck/.ghcup/env" ] && . "/home/deck/.ghcup/env" # ghcup-env
 
 #######################################################
 # SPECIAL FUNCTIONS

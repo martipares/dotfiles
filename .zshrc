@@ -2,8 +2,8 @@
 
 
 # TeXLive 2026
-PATH=$PATH:/usr/local/texlive/2026/bin/x86_64-linux
-export PATH=$PATH:/usr/local/texlive/2026/bin/x86_64-linux
+PATH=$PATH:/home/deck/TeXLive/2026/bin/x86_64-linux
+export PATH=$PATH:/home/deck/TeXLive/2026/bin/x86_64-linux
 
 
 # If not running interactively, don't do anything
@@ -83,21 +83,22 @@ alias ll='ls --all --long'
 #alias ll='ls -la'
 alias home='cd ~'
 alias cd..='cd ..'
-alias lib='cd run/media/martipares/library'
-alias briss2='/home/martipares/Projects/xi/briss_2_0/build/scriptsShadow/briss_2_0'
+alias lib='cd run/media/deck/library'
+alias briss2='/home/deck/Projects/xi/briss_2_0/build/scriptsShadow/briss_2_0'
 
 # Neovim
-alias nvimr='/home/martipares/Projects/xi/nvim-r/bin/nvim'
-alias nvimd='/home/martipares/Projects/xi/nvim-d/bin/nvim'
+alias nvimr='/home/deck/Projects/xi/nvim-r/bin/nvim'
+alias nvimd='/home/deck/Projects/xi/nvim-d/bin/nvim'
+alias nvims='/home/deck/Projects/xi/nvim-s/bin/nvim'
 alias gvim='gamemoderun nvim'
-alias gvimr='gamemoderun /home/martipares/Projects/xi/nvim-r/bin/nvim'
-alias gvimd='gamemoderun /home/martipares/Projects/xi/nvim-d/bin/nvim'
-alias nvimu='/home/martipares/Projects/linux/scripts/neovim_update.sh'
+alias gvimr='gamemoderun /home/deck/Projects/xi/nvim-r/bin/nvim'
+alias gvimd='gamemoderun /home/deck/Projects/xi/nvim-d/bin/nvim'
+alias nvimu='/home/deck/Projects/linux/scripts/neovim_update.sh'
 
 # TeXLive update
-alias texlive-update='sudo /usr/local/texlive/2026/bin/x86_64-linux/tlmgr update -all -self'
+alias texlive-update='sudo /home/deck/TeXLive/2026/bin/x86_64-linux/tlmgr update -all -self'
 
-[ -f "/home/martipares/.ghcup/env" ] && . "/home/martipares/.ghcup/env" # ghcup-env
+[ -f "/home/deck/.ghcup/env" ] && . "/home/deck/.ghcup/env" # ghcup-env
 
 
 # SPECIAL FUNCTIONS
