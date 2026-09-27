@@ -48,11 +48,11 @@ alias home='cd ~'
 alias cd..='cd ..'
 
 # Neovim
-alias nvimr='./projects/xi/nvim-r/bin/nvim'
-alias nvimd='./projects/xi/nvim-d/bin/nvim'
+alias nvimr='./Projects/xi/nvim-r/bin/nvim'
+alias nvimd='./Projects/xi/nvim-d/bin/nvim'
 alias gvim='gamemoderun nvim'
-alias gvimr='gamemoderun ./projects/xi/nvim-r/bin/nvim'
-alias gvimd='gamemoderun ./projects/xi/nvim-d/bin/nvim'
+alias gvimr='gamemoderun ./Projects/xi/nvim-r/bin/nvim'
+alias gvimd='gamemoderun ./Projects/xi/nvim-d/bin/nvim'
 
 [ -f "/home/martipares/.ghcup/env" ] && . "/home/martipares/.ghcup/env" # ghcup-env
 
