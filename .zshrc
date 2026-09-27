@@ -94,6 +94,9 @@ alias gvimr='gamemoderun /home/martipares/Projects/xi/nvim-r/bin/nvim'
 alias gvimd='gamemoderun /home/martipares/Projects/xi/nvim-d/bin/nvim'
 alias nvimu='/home/martipares/Projects/linux/scripts/neovim_update.sh'
 
+# TeXLive update
+alias texlive-update='sudo /usr/local/texlive/2026/bin/x86_64-linux/tlmgr update -all -self'
+
 [ -f "/home/martipares/.ghcup/env" ] && . "/home/martipares/.ghcup/env" # ghcup-env
 
 
