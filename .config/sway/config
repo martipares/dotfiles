@@ -54,11 +54,15 @@ exec_always autotiling -w 7 8 9 10 --limit 1
 #output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 
 
-#output DP-1 bg ~/.wallpaper_sway/wp_1.jpg fill
-output DP-1 bg ~/.wallpaper_sway/wp_1.png fill
+output eDP-1 bg ~/.wallpaper_sway/wp_1.jpg fill
+# output eDP-1 bg ~/.wallpaper_sway/wp_1.png fill
+
+
+output DP-1 bg ~/.wallpaper_sway/wp_3.jpg fill
+# output DP-1 bg ~/.wallpaper_sway/wp_1.png fill
 
 #output HDMI-A-1 bg ~/.wallpaper_sway/wp_2.jpg fill
-output HDMI-A-1 bg ~/.wallpaper_sway/wp_2.png fill
+output HDMI-A-2 bg ~/.wallpaper_sway/wp_2.png fill
 
 # Hardy
 # output * bg ~/.wallpaper_sway/wp_01.png fill
